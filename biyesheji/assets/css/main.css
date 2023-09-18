@@ -1,0 +1,71 @@
+/* 导航栏 */
+.navbar {
+    background-color: #333;/*导航栏背景颜色*/
+    color: #FFF;/*导航栏内的文字颜色*/
+    height: 60px;/*导航栏高度*/
+    display: flex;/*启用flex布局*/
+    justify-content: center;/*水平方向上，居中*/
+    align-items: center;/*垂直方向上，将元素居中对齐*/
+    padding: 0 ;/*内边距设置*/
+    border-top-left-radius: 0;  /* 左上圆角设为0 */
+    border-top-right-radius: 0; /* 右上圆角设为0 */
+    border-bottom-left-radius: 30px;  /* 保留左下圆角30px */
+    border-bottom-right-radius: 30px;  /* 保留右下圆角30px */
+    margin: 0 auto;/*上下边距为0，左右边距自动，相当于整体居中对齐*/
+    width: 1200px;/*最大*/
+    z-index: 10000;
+    position: relative;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+  }
+  
+  .navbar li {
+    margin: 0 10px;
+  }
+  
+  .navbar a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 30px;
+    background-color: #333;
+    transition: background-color 0.8s ease;
+
+  }
+  
+  .navbar a:hover {
+    background-color: #000000;
+  }
+
+  .navbar ul li a:hover{
+    color: rgb(131, 206, 255);
+  }
+
+  .navbar .active {
+    background-color: #f50808;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  html,body {
+    background:url(/imgs/beijing1.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    overflow: hidden;
+
+
+  }
